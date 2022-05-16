@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Mugiwara</title>
+</head>
+<body ng-app="mainModule" ng-controller="mainCtrl">
+    <section class="main" ng-style="Selected.styleF">
+
+        <!--HEADER-->
+        <header class="main-div header">
+            <h1>Mugiwara</h1>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="main-div content">
+            <div class="content-wrap">
+                <figure class="content-wrap-div content-wrap-figure">
+                    <figcaption class="content-wrap-figure-figcaption">
+                        <h2><span class="icon"></span>{{Selected.name}}</h2>
+                        <ul class="type-list" >
+                            <li class="type-list-item"  >{{Selected.rol}}</li>
+                        </ul>
+                    </figcaption>
+                    <div class="content-wrap-figure-img" style="background-image: url('../res/{{Selected.name}}.png')"></div>
+                </figure>
+                <article class="content-wrap-div content-wrap-info">
+                    <ul class="resume-list" >
+                        <li class="resume-list-item" >
+                            <i><span>DEAD OR ALIVE</span></i>
+                        </li>
+                        <li class="resume-list-item" >
+                            <i><span>Recompensa:</span></i> {{Selected.recompensa}}
+                        </li>
+                        <li class="resume-list-item">
+                            <i><span>¿Cuál es tu voto?</span></i>
+                        </li>
+                        <li></li>
+
+                        <li class="resume-list-item-btn">
+                            <i id= "btn_like" class="fa fa-thumbs-up"  ng-click="like( this )"></i>
+                        </li>
+                        <li  class="resume-list-item-btn">
+                            <i id ="btn_dislike" class="fa fa-thumbs-down"  ng-click="dislike( this )"></i>
+                        </li>
+
+                        <li class="resume-list-item" >
+                            <div class="progress" style="text-align: center;">
+                                <div id= "div1" class="progress-bar" style="width:0%;float:left;background:red;">
+                                    <span class="progress-bar-text" style="color: white;">{{porcentaje_like}}</span>
+                                </div>
+                                <div id= "div2" class="progress-bar" style="width:0%;float:left;background:gray">
+                                    <span class="progress-bar-text" style="color: white;">{{porcentaje_dislike}}</span>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </article>
+            </div>
+        </div>
+
+        <footer class="main-div footer">
+            <ul id="ListID" class="list">
+                <li class="list-item" ng-repeat="tripulantes in tripulante" ng-click="selectTripulante( tripulantes )">
+                    <a class="list-item-link" href="#">
+                        <figure class="list-item-link-figure" style="background-image: url('/res/{{tripulantes.name}}.png')">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+</body>
+</html>

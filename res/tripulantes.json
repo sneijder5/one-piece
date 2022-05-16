@@ -1,0 +1,16 @@
+[
+    {"name":"Monkey D. Luffy", "rol":"Capitan", "recompensa": "฿ 1.500.000.000", "style": [{"background-image": "linear-gradient( 135deg ,red, white )"}],"color": "red"},
+    {"name":"Roronoa Zoro", "rol":"Espadachin", "recompensa": "฿ 320.000.000", "style": [{"background-image": "linear-gradient( 135deg ,green, white )"}],"color": "green"},
+    {"name":"Nami", "rol":"Navegante", "recompensa": "฿ 66.000.000", "style": [{"background-image": "linear-gradient( 135deg ,orange, white )"}],"color": "orange"},
+    {"name":"Usopp", "rol":"Francotirador", "recompensa": "฿ 200.000.000", "style": [{"background-image": "linear-gradient( 135deg ,brown, white )"}],"color": "brown"},
+    {"name":"Vinsmoke Sanki", "rol":"Cocinero", "recompensa": "฿ 330.000.000", "style": [{"background-image": "linear-gradient( 135deg ,#efb810, white )"}],"color": "#efb810"},
+    {"name":"Tony Tony Chopper", "rol":"Medico", "recompensa": "฿ 100", "style": [{"background-image": "linear-gradient( 135deg ,pink, white )"}],"color": "pink"},
+    {"name":"Nico Robin", "rol":"Arqueóloga", "recompensa": "฿ 130.000.000", "style": [{"background-image": "linear-gradient( 135deg ,purple, white )"}],"color": "purple"},
+    {"name":"Franky", "rol":"Carpintero", "recompensa": "฿ 94.000.000", "style": [{"background-image": "linear-gradient( 135deg ,#00aae4, white )"}],"color": "#00aae4"}, 
+    {"name":"Brook", "rol":"Musico", "recompensa": "฿ 83.000.000", "style": [{"background-image": "linear-gradient( 135deg ,black, white )"}],"color": "black"},  
+    {"name":"Jinbe", "rol":"Timonel", "recompensa": "฿ 438.000.000", "style": [{"background-image": "linear-gradient( 135deg ,#604f37, white )"}],"color": "#604f37"}
+  ]
+
+  
+  
+  
